@@ -119,7 +119,7 @@ const FirstDisplaySection = ({ onDone, active, loopCount }) => {
     }, [active, onDone, loopCount])
 
     return (
-        <div className="flex h-full p-[24px] flex-col justify-between transition-all duration-500 ease-in-out">
+        <div className="flex h-full w-full p-[24px] flex-col justify-between transition-all duration-500 ease-in-out">
             <span
                 className="text-text-3 font-normal text-[15px] tracking-[1px]"
                 style={{ fontFamily: "'SFMono', monospace" }}
