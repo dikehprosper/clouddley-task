@@ -1,4 +1,4 @@
-const GridGraphicBackground = "/images/GridGraphicBackground.png"
+import GridGraphicBackground from "@/assets/images/GridGraphicBackground.png"
 import { ChevronRight } from "lucide-react"
 import ButtonFirstVariation from "../atoms/ButtonFirstVariation"
 

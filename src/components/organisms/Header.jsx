@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-const ClouddleyCompanyLogo = '/images/ClouddleyCompanyLogo.png';
+import ClouddleyCompanyLogo from '@/assets/images/ClouddleyCompanyLogo.png';
 
 const Header = () => {
 

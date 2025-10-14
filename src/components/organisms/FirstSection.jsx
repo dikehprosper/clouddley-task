@@ -1,6 +1,6 @@
 import { ChevronRight } from 'lucide-react'
-const ClouddleyAiIcon = '/images/ClouddleyAiIcon.png'
-const BackgroundImage = '/images/BackgroundImage.png'
+import ClouddleyAiIcon from '@/assets/images/ClouddleyAiIcon.png'
+import BackgroundImage from '@/assets/images/BackgroundImage.png'
 import AnimatedHighlights from './AnimatedHighlights';
 import DisplayCard from '../molucules/DisplayCard';
 import ButtonFirstVariation from '../atoms/ButtonFirstVariation';

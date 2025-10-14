@@ -3,12 +3,12 @@ import ArrowRightIcon from "../../assets/icons/ArrowRightIcon"
 import SuccessfulIcon from "../../assets/icons/SuccessfulIcon"
 import ButtonFirstVariation from "../atoms/ButtonFirstVariation"
 import CircularLoaderDemo from "./CircularLoaderDemo"
-const LocalhostImg = "/images/LocalhostImg.png"
-const ModelImg1 = "/images/ModelImg1.png"
-const ModelImg2 = "/images/ModelImg2.png"
-const ModelImg3 = "/images/ModelImg3.png"
-const ChatFrame = "/images/ChatFrame.png"
-const ChatFrame1 = "/images/ChatFrame1.png"
+import LocalhostImg from "@/assets/images/LocalhostImg.png"
+import ModelImg1 from "@/assets/images/ModelImg1.png"
+import ModelImg2 from "@/assets/images/ModelImg2.png"
+import ModelImg3 from "@/assets/images/ModelImg3.png"
+import ChatFrame from "@/assets/images/ChatFrame.png"
+import ChatFrame1 from "@/assets/images/ChatFrame1.png"
 
 const DisplayCard = () => {
     const [activeStep, setActiveStep] = useState(0)
