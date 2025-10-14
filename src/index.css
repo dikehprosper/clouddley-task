@@ -1,0 +1,291 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./assets/fonts/SFPro/SF-Pro.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'SF Pro Display', 'Inter', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+}
+
+@theme {
+   /* Colors */
+  --color-brand: #195CE1; /* rgb(25, 92, 225); */
+  --color-background: #0D0D0D;
+  --color-background-1: #0F0F0F; /* rgb(15, 15, 15); */
+  --color-background-2: #131313; /* rgb(19, 19, 19); */
+  --color-background-3: #121212; /* rgb(18, 18, 18); */
+  --color-background-4: #191919; /* rgb(25, 25, 25); */
+  --color-background-5: #252525; /* rgb(37, 37, 37); */
+  --color-background-6: #44CF73; /* rgb(68, 207, 115); */
+   --color-background-7: #202026; /*  rgb(32, 32, 38); */
+  --color-background-8: #35353A; /*  rgb(53, 53, 58); */
+  --color-text: #FFFFFF; /* rgb(255, 255, 255) */
+  --color-text-1: #E3E8EF; /* rgb(227, 232, 239) */
+  --color-text-2: #D1D1D1; /* rgb(209, 209, 209); */
+  --color-text-3: #98A2B3; /* rgb(152, 162, 179); */
+  --color-text-4: #7E808A; /* rgb(126, 128, 138); */
+ --color-text-5: #CFCFCF; /* rgb(207, 207, 207); */
+
+
+ /* Font weights */
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  /* Font sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+}
+
+.brandGradient {
+  background: linear-gradient(180deg, #47a3f377 0%, #195CE1 100%);
+}
+.secondGradientVariation {
+  background: linear-gradient(180deg, rgba(24, 24, 28)  0%, #98a2b306 100%);
+}
+
+.connect_your_cpu_button {
+box-shadow: 0px 0px 10px 1.5px rgba(65, 134, 231, 0.3);
+background: linear-gradient(180deg, #2a8be1 0%, #195CE1 100%);
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.connect_your_cpu_button::after {
+  content: '';
+  position: absolute;
+  height: 107%;
+  width: 103%;
+  background : red;
+  border-radius: 100px;
+  z-index: -1
+}
+
+.btn {
+  color: hsl(0, 0%, 85%);
+  position: relative;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 136, 255, 0.35) 7%,  
+    rgba(0, 136, 255, 0.1) 12%,  
+    rgba(0, 136, 255, 0.03) 7%,  
+    transparent 30%               
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 0;
+}
+
+.btn span,
+.btn svg {
+  position: relative;
+  z-index: 1;
+}
+
+
+.glow-border {
+  all: unset;
+  position: relative;
+}
+
+.glow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.3px;
+  background: linear-gradient(
+    to bottom,
+    hsl(210, 100%, 70%), 
+    hsl(210, 80%, 45%)    
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 0;
+}
+
+.glow-border span,
+.glow-border svg {
+  position: relative;
+  z-index: 1;
+}
+
+
+.glow-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;       
+  height: 130px;   
+  background: radial-gradient(
+    ellipse at center top,
+    rgba(152, 162, 179, 0.25) 0%,   
+    rgba(152, 162, 179, 0.12) 25%, 
+    rgba(152, 162, 179, 0.03) 50%, 
+    transparent 100%              
+  );
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+
+@keyframes slide-from-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-top-1 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+}
+
+
+@keyframes slide-from-bottom {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-from-bottom-1 {
+  0% {
+    transform: translateY(80px);
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+.animate-slide-from-top {
+    animation: slide-from-top 0.3s ease-out forwards;
+}
+
+.animate-slide-from-top-1 {
+    animation: slide-from-top-1 0.3s ease-out forwards;
+}
+
+.animate-slide-from-bottom {
+  animation: slide-from-bottom 0.3s ease-out forwards;
+}
+
+.animate-slide-from-bottom-1 {
+  animation: slide-from-bottom-1 0.3s ease-out forwards;
+}
+
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  25%  { opacity: 1; }
+  30%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out forwards;
+}
+
+@keyframes return-from-top-right {
+  0% {
+    opacity: 0;
+    transform: translateX(10px) translateY(-10px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animate-return-from-top-right {
+  animation: return-from-top-right 0.2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+  backface-visibility: hidden;
+  display: inline-flex;
+}
