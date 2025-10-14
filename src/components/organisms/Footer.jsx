@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import clouddleyCompanyLogo from '@/assets/images/clouddleyCompanyLogo.png';
+import ClouddleyCompanyLogo from '@/assets/images/ClouddleyCompanyLogo.png';
 import TwitterIcon from '@/assets/icons/TwitterIcon';
 import GithubIcon from '@/assets/icons/GithubIcon';
 
@@ -13,7 +13,7 @@ const Footer = () => {
                     <NavLink
                         to='/'
                     >
-                        <img src={clouddleyCompanyLogo} alt="clouddleyCompanyLogo" className="h-[62px] w-[165px] object-contain" />
+                        <img src={ClouddleyCompanyLogo} alt="ClouddleyCompanyLogo" className="h-[62px] w-[165px] object-contain" />
                     </NavLink>
                 </div>
 
