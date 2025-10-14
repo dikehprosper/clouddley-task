@@ -200,7 +200,7 @@ const SecondDisplaySection = ({ onDone, active, loopCount }) => {
 
             const second = setTimeout(() => {
                 setPhase(2)
-            }, 500)
+            }, 1000)
 
             return () => clearTimeout(second)
         }, 2000)
