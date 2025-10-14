@@ -136,10 +136,10 @@ const FourthSection = () => {
               key={activeIndex}
               src={useCases[activeIndex].img}
               className='w-full object-contain'
-              initial={{opacity: 0.4}}
+              initial={{opacity: 0.6}}
               animate={{opacity: 1}}
               exit={{opacity: 0}}
-              transition={{duration: 0.14, ease: "easeInOut"}}
+              transition={{duration: 0.04, ease: "easeInOut"}}
             />
           </AnimatePresence>
         </div>
