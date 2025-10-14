@@ -1,8 +1,7 @@
 import { ChevronRight } from 'lucide-react'
-import clouddleyAiIcon from '@/assets/images/clouddleyAiIcon.png'
+import ClouddleyAiIcon from '@/assets/images/ClouddleyAiIcon.png'
 import BackgroundImage from '@/assets/images/BackgroundImage.png'
 import AnimatedHighlights from './AnimatedHighlights';
-import CircularLoaderDemo from '../molucules/CircularLoaderDemo'
 import DisplayCard from '../molucules/DisplayCard';
 import ButtonFirstVariation from '../atoms/ButtonFirstVariation';
 
@@ -18,7 +17,7 @@ const FirstSection = () => {
                             Clouddley AI
                         </span>
                         <img
-                            src={clouddleyAiIcon}
+                            src={ClouddleyAiIcon}
                             alt="clouddleyAiIcon"
                             className="h-[18.33px] w-[18.33px]"
                         />
