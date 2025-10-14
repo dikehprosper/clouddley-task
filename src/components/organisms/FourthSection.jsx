@@ -82,8 +82,8 @@ const FourthSection = () => {
           Developers, <br /> Researchers, and Teams
         </span>
       </span>
-      <div className='flex justify-between w-full'>
-        <div className='flex flex-col w-[48%] relative overflow-hidden justify-evenly'>
+      <div className='flex justify-between w-full h-[590px]'>
+        <div className='flex flex-col w-[48%] relative overflow-hidden justify-evenly h-full'>
           {useCases.map((item, index) => (
             <motion.div
               key={index}
@@ -130,7 +130,7 @@ const FourthSection = () => {
             </motion.div>
           ))}
         </div>
-        <div className='!w-[52%] overflow-hidden'>
+        <div className='!w-[52%] overflow-hidden h-full'>
           <AnimatePresence mode='wait'>
             <motion.img
               key={activeIndex}
