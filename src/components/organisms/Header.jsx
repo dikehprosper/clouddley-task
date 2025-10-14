@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import clouddleyCompanyLogo from '@/assets/images/clouddleyCompanyLogo.png';
+import ClouddleyCompanyLogo from '@/assets/images/ClouddleyCompanyLogo.png';
 
 const Header = () => {
 
@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="flex w-full justify-between backdrop-blur-md items-center h-[70px] mx-auto px-[116px]">
       <NavLink to="/" className="ml-[-39px]">
-        <img src={clouddleyCompanyLogo} alt="clouddleyCompanyLogo" className="h-16" />
+        <img src={ClouddleyCompanyLogo} alt="ClouddleyCompanyLogo" className="h-16" />
       </NavLink>
 
      <div className="flex items-center gap-[195px]">
