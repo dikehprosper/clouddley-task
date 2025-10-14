@@ -1,10 +1,10 @@
 import ArrowRightIcon from "@/assets/icons/ArrowRightIcon"
 import LayersIcon from "@/assets/icons/LayersIcon"
-import MetaImg from "@/assets/images/Meta.png"
-import DeepseekImg from "@/assets/images/Deepseek.png"
-import MistralImg from "@/assets/images/Mistral.png"
-import GemmaImg from "@/assets/images/Gemma.png"
-import MicrosoftImg from "@/assets/images/Microsoft.png"
+const MetaImg = "/images/Meta.png"
+const DeepseekImg = "/images/Deepseek.png"
+const MistralImg = "/images/Mistral.png"
+const GemmaImg = "/images/Gemma.png"
+const MicrosoftImg = "/images/Microsoft.png"
 
 const FifthSection = () => {
     return (

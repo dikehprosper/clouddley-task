@@ -1,10 +1,10 @@
 import {useState, useEffect, useRef} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 import CustomSvgIcon from "@/assets/icons/CustomSvgIcon";
-import MistralImg from "@/assets/images/MistralImg.png";
-import LlamaImg from "@/assets/images/LlamaImg.png";
-import MistralAltImg from "@/assets/images/MistralAltImg.png";
-import DeepseekImg from "@/assets/images/DeepseekImg.png";
+const MistralImg = "/images/MistralImg.png";
+const LlamaImg = "/images/LlamaImg.png";
+const MistralAltImg = "/images/MistralAltImg.png";
+const DeepseekImg = "/images/DeepseekImg.png";
 
 const useCases = [
   {
