@@ -1,7 +1,6 @@
 # Clouddley Landing Page
 
 A sleek, modern **landing page for Clouddley**, built using **React**, **Tailwind CSS**, and **Framer Motion**.  
-This project focuses on performance, smooth animations, and a visually engaging user experience — perfect for SaaS or tech product presentations.
 
 ---
 
