@@ -7,9 +7,9 @@ This project focuses on performance, smooth animations, and a visually engaging 
 
 ## Tech Stack
 
-- **React**  
-- **Tailwind CSS** 
-- **Framer Motion**   
+- **React** — component-based frontend framework  
+- **Tailwind CSS** — utility-first CSS for rapid UI development  
+- **Framer Motion** — powerful animation library for React  
 
 ---
 
@@ -39,7 +39,7 @@ npm run dev
 
 
 
-## Folder Structure
+## 📁 Folder Structure
 
 ```
 clouddley-task/
@@ -52,4 +52,3 @@ clouddley-task/
 ├── package.json
 ├── tailwind.config.js
 └── README.md
-```
