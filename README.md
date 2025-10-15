@@ -39,9 +39,9 @@ npm run dev
 
 
 
-## 📁 Folder Structure
+## Folder Structure
 
-```plaintext
+```
 clouddley-task/
 ├── src/
 │   ├── assets/          # Images, icons, and static media
@@ -52,3 +52,4 @@ clouddley-task/
 ├── package.json
 ├── tailwind.config.js
 └── README.md
+```
