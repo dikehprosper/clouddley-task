@@ -7,9 +7,9 @@ This project focuses on performance, smooth animations, and a visually engaging 
 
 ## Tech Stack
 
-- **React** — component-based frontend framework  
-- **Tailwind CSS** — utility-first CSS for rapid UI development  
-- **Framer Motion** — powerful animation library for React  
+- **React**  
+- **Tailwind CSS** 
+- **Framer Motion**   
 
 ---
 
