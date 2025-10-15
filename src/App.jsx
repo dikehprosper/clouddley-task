@@ -3,7 +3,7 @@ import {
   Routes,
   BrowserRouter as Router,
 } from "react-router-dom";
-import LandingPage from "./components/pages/LandingPage";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
 
