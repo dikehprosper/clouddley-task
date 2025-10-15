@@ -41,7 +41,7 @@ npm run dev
 
 ## 📁 Folder Structure
 
-```
+```plaintext
 clouddley-task/
 ├── src/
 │   ├── assets/          # Images, icons, and static media
